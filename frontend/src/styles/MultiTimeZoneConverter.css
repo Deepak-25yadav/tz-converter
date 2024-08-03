@@ -1,171 +1,172 @@
 .parent-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  display: flex; /* Establishes a flex container */
+  flex-direction: column; /* Arranges children in a column */
+  justify-content: center; /* Centers children vertically */
+  min-height: 100vh; /* Ensures the container takes at least the full height of the viewport */
 }
 
 #dark-parent-container {
-  background-color: #202124;
+  background-color: #202124; /* Dark background color for dark mode */
 }
 
 .top-row {
-  background: rgba(206, 202, 202, 0.836);
-  position: relative;
-  height: 10vh;
-  padding-inline: 5vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 5vw;
-  margin: 0.1vh 1vw;
+  background: rgba(206, 202, 202, 0.836); /* Light grey background with some transparency */
+  position: relative; /* Establishes a new positioning context */
+  height: 10vh; /* Sets the height of the row */
+  padding-inline: 5vw; /* Horizontal padding */
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Distributes space evenly between items */
+  column-gap: 5vw; /* Horizontal gap between items */
+  margin: 0.1vh 1vw; /* Vertical and horizontal margin */
 }
 
 .url-row {
-  background: rgba(196, 194, 194, 0.338);
-  position: relative;
-  height: 15vh;
-  padding: 1.5vh 5vw;
-  margin: 0.1vh 1vw;
+  background: rgba(196, 194, 194, 0.338); /* Light grey background with transparency */
+  position: relative; /* Establishes a new positioning context */
+  height: 15vh; /* Sets the height of the row */
+  padding: 1.5vh 5vw; /* Vertical and horizontal padding */
+  margin: 0.1vh 1vw; /* Vertical and horizontal margin */
 }
 
 .url-input {
-  width: 100%;
-  height: 6vh;
-  border-radius: 0.5vh;
-  outline: none;
-  border: 1px solid gray;
-  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.282);
-  padding-inline: 1vw;
-  text-align: start;
-  margin-bottom: 1vh;
-  font-size: 1rem;
-  color: gray;
+  width: 100%; /* Takes full width of the parent */
+  height: 6vh; /* Sets the height of the input */
+  border-radius: 0.5vh; /* Rounds the corners */
+  outline: none; /* Removes outline on focus */
+  border: 1px solid gray; /* Grey border */
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.282); /* Inner shadow for depth */
+  padding-inline: 1vw; /* Horizontal padding inside the input */
+  text-align: start; /* Left-aligns the text */
+  margin-bottom: 1vh; /* Bottom margin */
+  font-size: 1rem; /* Font size */
+  color: gray; /* Text color */
 }
 
 #dark-top-row,
 #dark-url-row {
-  background-color: #2c2f34;
+  background-color: #2c2f34; /* Dark background color for dark mode */
 }
 
 .date-body {
-  position: relative;
-  background-color: white;
-  border: 1px solid gray;
-  height: 6vh;
-  width: 20vw;
-  border-radius: 1vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.282);
+  position: relative; /* Establishes a new positioning context */
+  background-color: white; /* Background color */
+  border: 1px solid gray; /* Border color and size */
+  height: 6vh; /* Sets the height */
+  width: 20vw; /* Sets the width */
+  border-radius: 1vh; /* Rounds the corners */
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.282); /* Inner shadow for depth */
 }
 
 .date-picker {
-  font-size: 1.1rem;
-  border: none;
-  outline: none;
-  height: 5.8vh;
-  width: 15vw;
-  border-radius: 1vh 0 0 1vh;
+  font-size: 1.1rem; /* Font size */
+  border: none; /* Removes border */
+  outline: none; /* Removes outline on focus */
+  height: 5.8vh; /* Sets the height */
+  width: 15vw; /* Sets the width */
+  border-radius: 1vh 0 0 1vh; /* Rounds the top-left and bottom-left corners */
 }
 
 .dark-date-picker {
-  background-color: #2c2f34ef;
-  color: white;
+  background-color: #2c2f34ef; /* Dark background color for dark mode */
+  color: white; /* Text color */
 }
 
 .calendar-box {
-  border-radius: 0 1vh 1vh 0;
-  border: 0.5px solid gray;
-  display: grid;
-  place-items: center;
-  height: 100%;
-  width: 5vw;
-  background: rgba(128, 128, 128, 0.338);
-  font-size: 1.3rem;
-  color: rgb(37, 156, 174);
+  border-radius: 0 1vh 1vh 0; /* Rounds the top-right and bottom-right corners */
+  border: 0.5px solid gray; /* Border color and size */
+  display: grid; /* Uses grid layout */
+  place-items: center; /* Centers items */
+  height: 100%; /* Full height of parent */
+  width: 5vw; /* Sets the width */
+  background: rgba(128, 128, 128, 0.338); /* Grey background with transparency */
+  font-size: 1.3rem; /* Font size */
+  color: rgb(37, 156, 174); /* Text color */
 }
 
 .filter-box {
-  border: 1px solid gray;
-  border-radius: 1vh;
-  width: 25vw;
-  height: 6vh;
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-  color: rgb(37, 156, 174);
+  border: 1px solid gray; /* Border color and size */
+  border-radius: 1vh; /* Rounds the corners */
+  width: 25vw; /* Sets the width */
+  height: 6vh; /* Sets the height */
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Centers items vertically */
+  font-size: 1.3rem; /* Font size */
+  color: rgb(37, 156, 174); /* Text color */
 }
 
+
 .filter-box div {
-  flex: 1;
-  height: 100%;
-  border-left: 1px solid gray;
-  display: grid;
-  place-items: center;
-  transition: all ease 0.5s;
+  flex: 1; /* Allows the div to grow and shrink equally */
+  height: 100%; /* Full height of the parent .filter-box */
+  border-left: 1px solid gray; /* Adds a left border */
+  display: grid; /* Uses grid layout */
+  place-items: center; /* Centers content within the grid */
+  transition: all ease 0.5s; /* Smooth transition effect on all properties */
 }
 
 .filter-box div:hover {
-  background-color: rgba(61, 194, 214, 0.731);
-  color: rgb(206, 204, 204);
+  background-color: rgba(61, 194, 214, 0.731); /* Changes background color on hover */
+  color: rgb(206, 204, 204); /* Changes text color on hover */
 }
 
 .time-converter {
-  padding: 1vh 1vw;
+  padding: 1vh 1vw; /* Vertical and horizontal padding */
 }
 
 .zone-box {
-  position: relative;
-  border: 1px solid rgb(147, 147, 147);
-  height: 25vh;
-  margin-bottom: 1vh;
-  padding-inline: 0.5vw;
+  position: relative; /* Establishes a new positioning context */
+  border: 1px solid rgb(147, 147, 147); /* Border color and size */
+  height: 25vh; /* Sets the height */
+  margin-bottom: 1vh; /* Bottom margin */
+  padding-inline: 0.5vw; /* Horizontal padding */
 }
 
 #dark-zone-box {
-  background-color: #2c2f34;
+  background-color: #2c2f34; /* Dark background color for dark mode */
 }
 
 .zone-top-row {
-  height: 55%;
-  display: flex;
-  align-items: center;
-  column-gap: 1vw;
+  height: 55%; /* Sets the height relative to the parent */
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Centers items vertically */
+  column-gap: 1vw; /* Horizontal gap between items */
 }
 
 .time-slider {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
+  width: 100%; /* Full width of the parent */
+  height: 60px; /* Sets the height */
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Centers items vertically */
 }
 
 .labels {
-  width: 100%;
-  height: 2vh;
-  margin-top: -2vh;
-  font-size: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: gray;
+  width: 100%; /* Full width of the parent */
+  height: 2vh; /* Sets the height */
+  margin-top: -2vh; /* Negative margin to adjust positioning */
+  font-size: 2vh; /* Font size */
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Distributes space evenly between items */
+  color: gray; /* Text color */
 }
 
 .time-thumb {
-  border: 1px solid rgb(104, 104, 104);
-  color: rgb(158, 157, 157);
-  border-radius: 2px;
-  background: #f7f4f4;
-  height: 30px;
-  width: 35px;
-  cursor: grab;
-  outline: none;
+  border: 1px solid rgb(104, 104, 104); /* Border color and size */
+  color: rgb(158, 157, 157); /* Text color */
+  border-radius: 2px; /* Rounds the corners */
+  background: #f7f4f4; /* Background color */
+  height: 30px; /* Sets the height */
+  width: 35px; /* Sets the width */
+  cursor: grab; /* Cursor changes to grab */
+  outline: none; /* Removes outline on focus */
 }
 
 .horizontal-time-track {
-  background: linear-gradient(
+  background: linear-gradient( /* Background gradient for time track */
     to right,
     rgba(75, 105, 140, 1) 0%,
     rgba(75, 105, 140, 1) 30%,
@@ -176,13 +177,12 @@
     rgba(204, 241, 240, 1) 60%,
     rgb(98, 135, 179) 100%
   );
-
-  height: 3.5vh;
-  border-radius: 0.5vh;
+  height: 3.5vh; /* Sets the height */
+  border-radius: 0.5vh; /* Rounds the corners */
 }
 
 .dark-horizontal-time-track {
-  background: linear-gradient(
+  background: linear-gradient( /* Background gradient for dark mode */
     to right,
     #4b698c 0%,
     #efdea0 30%,
@@ -192,157 +192,157 @@
 }
 
 .vertical-time-mark {
-  background-color: rgb(113, 110, 110);
-  font-size: 10px;
-  height: 10px;
-  width: 2px;
+  background-color: rgb(113, 110, 110); /* Background color */
+  font-size: 10px; /* Font size */
+  height: 10px; /* Sets the height */
+  width: 2px; /* Sets the width */
 }
 
 .select {
-  width: 100px;
+  width: 100px; /* Sets the width */
 }
 
 .drag-handle {
-  cursor: grab;
-  user-select: none;
+  cursor: grab; /* Cursor changes to grab */
+  user-select: none; /* Prevents text selection */
 }
 
 .drag-button {
-  color: rgb(161, 155, 155);
-  display: flex;
-  flex-direction: column;
-  cursor: grab;
+  color: rgb(161, 155, 155); /* Text color */
+  display: flex; /* Uses flexbox layout */
+  flex-direction: column; /* Arranges children in a column */
+  cursor: grab; /* Cursor changes to grab */
 }
 
 .zone-left-box {
-  color: gray;
-  width: 60%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
+  color: gray; /* Text color */
+  width: 60%; /* Sets the width relative to the parent */
+  height: 80%; /* Sets the height relative to the parent */
+  display: flex; /* Uses flexbox layout */
+  flex-direction: column; /* Arranges children in a column */
+  align-items: start; /* Aligns items to the start horizontally */
+  justify-content: space-between; /* Distributes space evenly between items */
 }
 
 .zone-left-box h2 {
-  color: rgb(63, 63, 63);
+  color: rgb(63, 63, 63); /* Text color for h2 elements */
 }
 
 .zone-right-box {
-  display: flex;
-  flex-direction: column;
-  height: 80%;
+  display: flex; /* Uses flexbox layout */
+  flex-direction: column; /* Arranges children in a column */
+  height: 80%; /* Sets the height relative to the parent */
 }
 
 .zone-right-box span {
-  display: flex;
-  justify-content: space-between;
-  color: rgba(158, 147, 147, 0.805);
+  display: flex; /* Uses flexbox layout */
+  justify-content: space-between; /* Distributes space evenly between items */
+  color: rgba(158, 147, 147, 0.805); /* Text color */
 }
 
 .remove {
-  position: absolute;
-  right: 1vw;
-  top: 0.5vh;
-  font-size: 1.5rem;
-  color: rgb(173, 169, 169);
-  background: transparent;
-  outline: none;
-  border: none;
-  cursor: pointer;
+  position: absolute; /* Positions the element absolutely within the nearest positioned ancestor */
+  right: 1vw; /* Positions the element 1vw from the right */
+  top: 0.5vh; /* Positions the element 0.5vh from the top */
+  font-size: 1.5rem; /* Font size */
+  color: rgb(173, 169, 169); /* Text color */
+  background: transparent; /* Transparent background */
+  outline: none; /* Removes outline on focus */
+  border: none; /* Removes border */
+  cursor: pointer; /* Cursor changes to pointer */
 }
 
-/* Media Queries for responsiveness */
 
 @media (max-width: 1200px) {
   .top-row,
   .url-row {
-    flex-direction: column;
-    height: auto;
-    padding: 2vw;
+    flex-direction: column; /* Stacks elements vertically on smaller screens */
+    height: auto; /* Allows the height to adjust based on content */
+    padding: 2vw; /* Adds padding for spacing */
   }
 
   .date-body,
   .filter-box {
-    width: 30vw;
+    width: 30vw; /* Sets the width to 30% of the viewport width */
   }
 
   .calendar-box {
-    width: 10vw;
+    width: 10vw; /* Sets the width to 10% of the viewport width */
   }
 
   .date-picker {
-    width: 20vw;
+    width: 20vw; /* Sets the width to 20% of the viewport width */
   }
 }
 
 @media (max-width: 768px) {
   .top-row,
   .url-row {
-    padding: 2vw;
+    padding: 2vw; /* Adds padding for spacing */
   }
 
   .date-body,
   .filter-box {
-    width: 40vw;
+    width: 40vw; /* Sets the width to 40% of the viewport width */
   }
 
   .calendar-box {
-    width: 12vw;
+    width: 12vw; /* Sets the width to 12% of the viewport width */
   }
 
   .date-picker {
-    width: 28vw;
+    width: 28vw; /* Sets the width to 28% of the viewport width */
   }
 
   .filter-box {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjusts font size for readability */
   }
 
   .time-thumb {
-    height: 20px;
-    width: 25px;
+    height: 20px; /* Adjusts height for smaller screens */
+    width: 25px; /* Adjusts width for smaller screens */
   }
 
   .horizontal-time-track {
-    height: 3vh;
+    height: 3vh; /* Adjusts height for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .top-row,
   .url-row {
-    padding: 3vw;
+    padding: 3vw; /* Adds padding for spacing */
   }
 
   .date-body,
   .filter-box {
-    width: 80vw;
-    height: 8vh;
+    width: 80vw; /* Sets the width to 80% of the viewport width */
+    height: 8vh; /* Sets the height to 8% of the viewport height */
   }
 
   .calendar-box {
-    width: 15vw;
+    width: 15vw; /* Sets the width to 15% of the viewport width */
   }
 
   .date-picker {
-    width: 60vw;
+    width: 60vw; /* Sets the width to 60% of the viewport width */
   }
 
   .filter-box {
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* Reduces font size for smaller screens */
   }
 
   .time-thumb {
-    height: 15px;
-    width: 20px;
+    height: 15px; /* Adjusts height for smaller screens */
+    width: 20px; /* Adjusts width for smaller screens */
   }
 
   .horizontal-time-track {
-    height: 2.5vh;
+    height: 2.5vh; /* Adjusts height for smaller screens */
   }
 
   .labels {
-    font-size: 1.5vh;
+    font-size: 1.5vh; /* Adjusts font size for readability */
   }
 }
+
